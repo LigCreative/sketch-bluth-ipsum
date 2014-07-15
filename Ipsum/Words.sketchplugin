@@ -17,6 +17,8 @@ var bluthIpsum = function(num, label) {
 		[layer setStringValue: ipsumStr]
 		[layer setName: ipsumLabel]
 		[layer adjustFrameToFit]
+
+		dataRemove = data.splice(ipsumNum, 1)
 	}
 }
 
