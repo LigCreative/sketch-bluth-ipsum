@@ -1,24 +1,6 @@
-// ( ctrl cmd b )
 // Bluth Ipsum Sentences - There's always money in the banana stand.
 
-#import '../data/bluth-ipsum.js'
+#import '../data/bluth.js'
+#import '../js/ipsum.js'
 
-var sentNum = [[doc askForUserInput: "How many words? Her?" initialValue: "1"] integerValue],
-	sentDiv = ". "
-
-var bluthIpsum = function(num) {
-
-	for (var i = 0; selection.length; i++) {
-		var layer = selection[i],
-			ipsumNum = Math.floor(Math.random() * data.length),
-			ipsumStr = data[ipsumNum].split(sentDiv, num).join('. ') + '.'
-		
-		[layer setStringValue: ipsumStr]
-		[layer setName: ipsumStr]
-		[layer adjustFrameToFit]
-
-		var dataRemove = data.splice(ipsumNum, 1)
-	}
-}
-
-bluthIpsum(sentNum)
+bluthIpsum(textNum, "sentence")
