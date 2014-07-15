@@ -1,17 +1,17 @@
 // ( ctrl cmd b )
-// Bluth Ipsum Words - There's always money in the banana stand.
+// Bluth Ipsum Sentences - There's always money in the banana stand.
 
 #import '../data/bluth-ipsum.js'
 
-var wordNum = [[doc askForUserInput: "How many words? Her?" initialValue: "1"] integerValue],
-	wordDiv = " "
+var sentNum = [[doc askForUserInput: "How many words? Her?" initialValue: "1"] integerValue],
+	sentDiv = ". "
 
 var bluthIpsum = function(num) {
 
 	for (var i = 0; selection.length; i++) {
 		var layer = selection[i],
 			ipsumNum = Math.floor(Math.random() * data.length),
-			ipsumStr = data[ipsumNum].split(wordDiv, num).join(' ')
+			ipsumStr = data[ipsumNum].split(sentDiv, num).join('. ') + '.'
 		
 		[layer setStringValue: ipsumStr]
 		[layer setName: ipsumStr]
@@ -21,4 +21,4 @@ var bluthIpsum = function(num) {
 	}
 }
 
-bluthIpsum(wordNum)
+bluthIpsum(sentNum)
