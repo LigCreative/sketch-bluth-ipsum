@@ -1,6 +1,6 @@
 // Bluth Ipsum Sentences - There's always money in the banana stand.
 
 #import '../data/bluth.js'
-#import '../js/ipsum.js'
+#import '../js/text-generate.js'
 
 bluthIpsum(textNum, "sentence")

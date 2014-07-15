@@ -1,10 +1,9 @@
 var textNum = [[doc askForUserInput: "How Many? Her?" initialValue: "1"] integerValue],
 	bluthIpsum = function(num, type) {
 
-	var textDiv = (type === "sentence") ? '. ' : ' '
-
 	for (var i = 0; selection.length; i++) {
-		var layer = selection[i]
+		var layer = selection[i],
+			textDiv = (type === "sentence") ? '. ' : ' '
 
 		if([layer class] === MSTextLayer) {
 			var ipsumNum = Math.floor(Math.random() * data.length),
