@@ -8,8 +8,7 @@ var wordNum = [[doc askForUserInput: "How many words? Her?" initialValue: "1"] i
 
 var bluthIpsum = function(num, label) {
 	var label = label || 'Her?',
-		ipsumArr = ipsum.split(' ', num),
-		ipsumStr = ipsumArr.join(' ')
+		ipsumStr = ipsum.split(' ', num).join(' ')
 
 	for (var i = 0; selection.length; i++) {
 		var layer = selection[i]
@@ -20,4 +19,4 @@ var bluthIpsum = function(num, label) {
 	}
 }
 
-bluthIpsum(wordNum, 'Label Test')
+bluthIpsum(wordNum)
