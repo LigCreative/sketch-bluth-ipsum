@@ -518,7 +518,7 @@ h6 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.7em;
   margin: 0;
   padding-bottom: 1em;
@@ -679,10 +679,6 @@ Footer
 
 .footer {
   padding: 40px 20px;
-}
-
-.footer p {
-  font-size: 10px;
 }
 
 .footer .logo-lig-a {
