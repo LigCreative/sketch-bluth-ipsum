@@ -558,13 +558,16 @@ a:hover {
 }
 
 .button.button-github {
-  padding-top: 13px;
-  padding-bottom: 13px;
+  vertical-align: top;
+  padding-top: 18px;
+  padding-bottom: 8px;
 }
 
 .button .icon-github {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
+  margin-top: -5px;
 }
 
 @media (min-width: 500px) {
@@ -572,6 +575,11 @@ a:hover {
     display: inline-block;
     font-size: 24px;
     padding: 20px 40px;
+  }
+
+  .button.button-github {
+    padding-top: 25px;
+    padding-bottom: 15px;
   }
 
   .button .icon-github {

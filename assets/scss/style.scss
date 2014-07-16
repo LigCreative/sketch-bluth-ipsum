@@ -105,17 +105,32 @@ a{
 	}
 
 	&.button-github{
-		padding-top: 13px; padding-bottom: 13px;
+		vertical-align: top;
+		padding: {
+			top: 18px;
+			bottom: 8px;
+		}
 	}
 
 	.icon-github{
 		width: 24px; height: 24px;
+		margin: {
+			left: 10px;
+			top: -5px;
+		}
 	}
 
 	@media (min-width: $bp-md) {
 		display: inline-block;
 		font-size: 24px;
 		padding: 20px 40px;
+
+		&.button-github{
+			padding: {
+				top: 25px;
+				bottom: 15px;
+			}
+		}
 
 		.icon-github{
 			width: 33px; height: 32px;
