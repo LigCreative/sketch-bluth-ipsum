@@ -638,7 +638,7 @@ Main Content
 
 .main {
   background: #fff;
-  padding: 40px 20px 60px;
+  padding: 40px 20px;
   color: #222222;
   border-radius: 1px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25), 0 5px 20px rgba(0, 0, 0, 0.1);
@@ -665,7 +665,7 @@ Main Content
 
 @media (min-width: 500px) {
   .main {
-    padding: 60px 80px 80px;
+    padding: 60px 80px;
   }
 
   .main h3 {

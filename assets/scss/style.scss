@@ -189,7 +189,7 @@ Main Content
 
 .main{
 	background: #fff;
-	padding: 40px 20px 60px;
+	padding: 40px 20px;
 	color: $c-gray;
 	border-radius: 1px;
 	box-shadow:
@@ -216,7 +216,7 @@ Main Content
 	}
 
 	@media (min-width: $bp-md) {
-		padding: 60px 80px 80px;
+		padding: 60px 80px;
 
 		h3{
 			font-size: 32px
