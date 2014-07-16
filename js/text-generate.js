@@ -3,11 +3,12 @@ var textNum = [[doc askForUserInput: "How Many? Her?" initialValue: "1"] integer
 
 	for (var i = 0; selection.length; i++) {
 		var layer = selection[i],
-			textDiv = (type === "sentence") ? '. ' : ' '
+			textDiv = (type === "sentence") ? '. ' : ' ',
+			textEnd = (type === "sentence") ? '.' : ''
 
 		if([layer class] === MSTextLayer) {
 			var ipsumNum = Math.floor(Math.random() * data.length),
-				ipsumStr = data[ipsumNum].split(textDiv, num).join(textDiv) + textDiv,
+				ipsumStr = data[ipsumNum].split(textDiv, num).join(textDiv) + textEnd,
 				dataRemove = data.splice(ipsumNum, 1)
 		
 			[layer setStringValue: ipsumStr]
