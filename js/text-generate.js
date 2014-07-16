@@ -5,12 +5,18 @@ var textNum = [[doc askForUserInput: "How Many? Her?" initialValue: "1"] integer
 		var layer = selection[i],
 			textDiv, textEnd
 
-		if(type === "sentence") {
-			textDiv = '. ',
-			textEnd = '.'
-		} else if(type === "word"){
-			textDiv = ' ',
-			textEnd = ''
+		switch (type) {
+			case "sentence":
+				textDiv = ". ",
+				textEnd = "."
+				break;
+			case "word":
+				textDiv = " ",
+				textEnd = ""
+				break;
+			default:
+				textDiv = "",
+				textEnd = ""
 		}
 
 		if([layer class] === MSTextLayer) {
