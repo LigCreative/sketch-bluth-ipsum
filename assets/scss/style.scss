@@ -122,6 +122,14 @@ a{
 
 	@media (min-width: $bp-md) {
 		display: inline-block;
+		font-size: 18px;
+		padding: {
+			left: 30px;
+			right: 30px;
+		}
+	}
+
+	@media (min-width: $bp-lg) {
 		font-size: 24px;
 		padding: 20px 40px;
 
