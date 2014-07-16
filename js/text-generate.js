@@ -3,8 +3,15 @@ var textNum = [[doc askForUserInput: "How Many? Her?" initialValue: "1"] integer
 
 	for (var i = 0; selection.length; i++) {
 		var layer = selection[i],
-			textDiv = (type === "sentence") ? '. ' : ' ',
-			textEnd = (type === "sentence") ? '.' : ''
+			textDiv, textEnd
+
+		if(type === "sentence") {
+			textDiv = '. ',
+			textEnd = '.'
+		} else if(type === "word"){
+			textDiv = ' ',
+			textEnd = ''
+		}
 
 		if([layer class] === MSTextLayer) {
 			var ipsumNum = Math.floor(Math.random() * data.length),
