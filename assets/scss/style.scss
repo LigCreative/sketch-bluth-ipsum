@@ -105,10 +105,8 @@ a{
 	}
 
 	&.button-github{
-		vertical-align: top;
 		padding: {
-			top: 18px;
-			bottom: 8px;
+			top: 15px; bottom: 18px;
 		}
 	}
 
@@ -116,7 +114,7 @@ a{
 		width: 24px; height: 24px;
 		margin: {
 			left: 10px;
-			top: -5px;
+			bottom: -8px;
 		}
 	}
 
@@ -135,13 +133,16 @@ a{
 
 		&.button-github{
 			padding: {
-				top: 25px;
-				bottom: 15px;
+				top: 20px;
+				bottom: 20px;
 			}
 		}
 
 		.icon-github{
 			width: 33px; height: 32px;
+			margin: {
+				bottom: -8px;
+			}
 		}
 	}
 }
