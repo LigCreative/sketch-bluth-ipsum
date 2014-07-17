@@ -260,3 +260,19 @@ Footer
 		}
 	}
 }
+
+/*----------------
+Annabell
+----------------*/
+
+.bell-of-the-ball{
+	display: block;
+	padding: 10px;
+	opacity: 0;
+	transition: 0.5s ease all;
+	text-transform: uppercase;
+
+	&:hover{
+		opacity: 0.25
+	}
+}

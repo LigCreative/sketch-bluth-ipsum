@@ -711,3 +711,20 @@ Footer
     width: 150px;
   }
 }
+
+/*----------------
+Annabell
+----------------*/
+
+.bell-of-the-ball {
+  display: block;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  text-transform: uppercase;
+}
+
+.bell-of-the-ball:hover {
+  opacity: 0.25;
+}
